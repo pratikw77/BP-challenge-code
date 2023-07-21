@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+}
+.container {
+  display: flex;
+}
+
+div{
+  text-align: center;
+}
+
+.box1, .box2 {
+  flex: 1; /* Makes both divs equally distribute the available space horizontally */
+  height: 100px; /* Set the height as per your requirement */
+  margin: 5px; /* Add some margin between the divs */
+  border: 1px solid #ccc; /* Optional: Add borders for better visibility */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column; /* Stack the divs vertically */
+  }
+}
