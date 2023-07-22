@@ -3,17 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { SearchDeleteComponent } from './search-delete/search-delete.component';
-import { UserRegistrationService } from './user-registration.service'
+import { PassengerComponent } from './passenger-component/passenger.component';
+import { PassengerCalculatorService } from './service/passenger-calculator.service'
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
-    SearchDeleteComponent
+    PassengerComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserRegistrationService],
+  providers: [PassengerCalculatorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,27 @@
+<div class="container">
+  <section class="box1">
+    <form>
+        <div>
+          <h2>Ideal Passengers Calculator</h2>
+        <div>
+          <label for="vehicleIds">Insert a list of vehicles (M, C, B, T):</label>
+          <input type="text" [(ngModel)]="vehicleIds" name="vehicleIds">
+          <button (click)="onSubmit()">Submit</button>
+        </div>
+        <div *ngIf="idealPassengerCount > 0">
+          <p>Current result for "{{ currentVehicleId }}" = {{ idealPassengerCount }}</p>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="box2">
+    <div>
+      <h2>Previous results</h2>
+      <ul>
+        <li *ngFor="let calculation of previousCalculations">
+          {{ calculation.input }}: {{ calculation.idealNumberOfPassengers }}
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>

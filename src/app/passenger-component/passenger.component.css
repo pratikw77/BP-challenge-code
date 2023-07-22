@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+
+div{
+  text-align: center;
+}
+
+.box1, .box2 {
+  flex: 1; /* To distribute space between two sections equally */
+  height: 100px;
+  margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column; /* Align sections vertically (Responsive Web Development) */
+  }
+}
